@@ -204,7 +204,7 @@ pub struct Check {
     #[serde(rename = "numDistinctUsers")]
     pub num_distinct_users: u64,
     #[serde(rename = "lastReportedAt")]
-    pub last_reported_at: DateTime<Utc>,
+    pub last_reported_at: Option<DateTime<Utc>>,
     pub reports: Option<Vec<CheckReport>>,
 }
 

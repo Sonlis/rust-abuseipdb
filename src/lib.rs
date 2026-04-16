@@ -217,9 +217,9 @@ pub struct CheckReport {
     #[serde(rename = "reporterId")]
     pub reporter_id: u64,
     #[serde(rename = "reporterCountryCode")]
-    pub reporter_country_code: String,
+    pub reporter_country_code: Option<String>,
     #[serde(rename = "reporterCountryName")]
-    pub reporter_country_name: String,
+    pub reporter_country_name: Option<String>,
 }
 
 // Verbose flag if `false`, will exclude reports and the country name field.
